@@ -5,6 +5,7 @@
 roslaunch robot_description base_gazebo_control_xacro.launch
 ```
 ## Using code to  control Car & Traffic Light
+**Code:** [traffic_light_control.py](https://github.com/Joeysssss/Using_Ros_Control_Car-Simulator/blob/main/traffic_light_control.py) <br>
 1. Car Simulator
 ```
 cmd_vel_msg.linear.x = FORWARD_SPEED   
