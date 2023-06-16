@@ -12,6 +12,10 @@ cmd_vel_msg.linear.x = FORWARD_SPEED
 cmd_vel_pub.publish(cmd_vel_msg)
 ```
 2. Traffic light
+using GPIO to control traffic light <br>
+```
+import Jetson.GPIO as GPIO
+```
 ```
 def turn_on_led(led_pin):              # e.g.turn_on_led(RED_LED_PIN)
     GPIO.output(led_pin, GPIO.HIGH)
