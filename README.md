@@ -11,7 +11,7 @@ roslaunch robot_description base_gazebo_control_xacro.launch
 cmd_vel_msg.linear.x = FORWARD_SPEED   
 cmd_vel_pub.publish(cmd_vel_msg)
 ```
-2. Traffic light
+2. Traffic light <br>
 using GPIO to control traffic light <br>
 ```
 import Jetson.GPIO as GPIO
