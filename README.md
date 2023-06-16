@@ -1,1 +1,20 @@
 # Using_Ros_Control_Car-Simulator
+**Device:** [Jetson Nano Developer Tool Kit 2GB](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) <br>
+## Launch Car simulator
+```
+roslaunch robot_description base_gazebo_control_xacro.launch
+```
+## Using code to  control Car & Traffic Light
+1. Car Simulator
+```
+cmd_vel_msg.linear.x = FORWARD_SPEED   
+cmd_vel_pub.publish(cmd_vel_msg)
+```
+2. Traffic light
+```
+def turn_on_led(led_pin):              # e.g.turn_on_led(RED_LED_PIN)
+    GPIO.output(led_pin, GPIO.HIGH)
+    
+def turn_off_led(led_pin):             # e.g.turn_off_led(RED_LED_PIN)
+    GPIO.output(led_pin, GPIO.LOW)
+```
